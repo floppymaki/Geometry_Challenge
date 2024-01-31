@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <td><a href="exercise.html?id=${exercise.id}&option=0">${exercise.title}</a></td>
             <td>
                 <div class="btn-group" role="group">
-                    <a href="/create.html?id=${exercise.id}" class="btn btn-warning btn-edit">
+                    <a href="create.html?id=${exercise.id}" class="btn btn-warning btn-edit">
                         <i class="bi bi-pencil-square"></i>
                     </a>
 
@@ -60,4 +60,6 @@ function deleteExercise(btn){
     .catch(error => {
         console.error('Error:', error);
     });
+
+    window.location.href = '/';
 }

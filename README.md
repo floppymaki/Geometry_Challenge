@@ -14,5 +14,5 @@ I provided the db.json file which already contains some exercise data.
 To start the the json-server, run the following command:
 
 ```bash
-json-server db.json
+npx json-server db.json
 ```
