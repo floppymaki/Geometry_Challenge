@@ -166,7 +166,8 @@ function addCircle() {
     let gridPos = getGridPos(pos);
 
     if(isValid(gridPos)) {
-        new Audio('sounds/zapsplat_multimedia_gameshow_correct_answer_ping_ring_chime_001_92774.mp3').play()
+        new Audio('https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-84577/zapsplat_multimedia_gameshow_correct_answer_ping_ring_chime_001_92774.mp3').play();
+
         drawCircle(gridPos, false)
 
         playerCoords[currentExercise].push(gridPos);
@@ -205,7 +206,7 @@ function completeThisExercise() {
     if(correctCount === exerciseCoords.length) {
         // alert('Good job! 🥳🥳🥳');
         clearInterval(timer);
-        new Audio('sounds/zapsplat_multimedia_game_sound_win_correct_positive_chime_78398.mp3').play();
+        new Audio('https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-77317/zapsplat_multimedia_game_sound_win_correct_positive_chime_78398.mp3').play();
     }
 }
 
@@ -263,7 +264,7 @@ function drawBadCircle(pos) {
     document.getElementById('wrong-count').textContent = wrongCount;
 
 
-    new Audio('sounds/zapsplat_multimedia_game_error_tone_006_24924.mp3').play()
+    new Audio('https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-23735/zapsplat_multimedia_game_error_tone_006_24924.mp3').play()
 
     let circle = new Konva.Circle({
         x: pos['x'],
