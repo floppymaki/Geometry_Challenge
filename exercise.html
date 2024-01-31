@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js "></script>
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
+    <title>Geometry Challenge</title>
+</head>
+<body>
+    <div class="card mx-auto" style="width: 70%;">
+        
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h2 id="title">Geometry Challenge |</h2>
+            <a href="index.html" class="btn btn-dark"><i class="bi bi-arrow-left"></i></a>
+        </div>
+
+        <div class="card-body">
+            <div class="d-flex justify-content-around">
+
+                <h3><span id="correct-count">0</span> <i class="bi bi-check" style="color:#6BCB77"></i> | <span id="wrong-count">0</span><i class="bi bi-x" style="color:#ff6b6b"></i></h3> 
+                
+                <div class="btn-group border mx-3" role="group" id="exerciseBtns">
+
+                </div>
+    
+                <h3 id="timer">00 : 00</h3>
+
+            </div>
+
+
+            <!-- konva field -->
+
+            <div class="d-flex">
+                <div class="btn-group-vertical mt-auto mb-3" role="group" id="optionBtns">
+                    <a href="" class="btn btn-outline-secondary d-flex"><i class="bi bi-square mx-1"></i>Mirror all</a>
+                    <a href="" class="btn btn-outline-secondary d-flex"><i class="bi bi-arrow-right-square mx-1"></i>Mirror horizontally</a>
+                    <a href="" class="btn btn-outline-secondary d-flex"><i class="bi bi-arrow-down-square mx-1"></i>Mirror vertically</a>
+                    <a href="" class="btn btn-outline-secondary d-flex"><i class="bi bi-arrow-down-right-square mx-1"></i>Mirror diagonally</a>
+                </div>
+    
+                <div id="konva-field" class="mx-auto" style="width:640px; height:640px;" onclick="addCircle()">
+    
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!-- <script src="app.js"></script> -->
+    <script src="https://unpkg.com/konva@9/konva.min.js"></script>
+    <script src="exercise.js"></script>
+
+
+</body>
+</html>
+</body>
+</html>
